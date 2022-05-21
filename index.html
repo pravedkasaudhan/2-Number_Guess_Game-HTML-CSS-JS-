@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess game</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 10px 0px;
+        }
+        #container{
+            padding: 40px;
+            display:flex;
+            flex-direction: column;
+            width:50%;
+            margin:100px auto;
+            justify-content: center;
+            align-items: center;
+            background-color: blanchedalmond;
+            height: auto;
+            border-radius: 30px;
+        }
+        #result{
+            color:rgb(16, 20, 13);
+            background-color: rgb(219, 238, 149);
+            font-size: 1.3rem;
+            font-weight: bolder;
+            padding: 15px;
+            border-radius: 20px;
+        }
+        body{
+            background: url(./images/background.jpg) no-repeat center center/cover; 
+        }
+        #container{
+            background: url(./images/images.jpg) no-repeat  center/cover;
+        }
+        .alpha{
+            border-radius: 20px;
+            padding:5px;
+            text-align: center;
+        }
+        .beta{
+            background-color: crimson;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <input class="alpha" type="text" id="entry" placeholder="Enter any number">
+        <button class="alpha beta" id="btn">CLICK HERE</button>
+        <button class="alpha beta" id="resetbtn">Reset</button>
+        <div id="result"></div>
+    </div>
+    <script src="guess.js"></script>
+</body>
+</html>
